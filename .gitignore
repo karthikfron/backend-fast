@@ -1,2 +1,26 @@
-.vercel
-.env
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment
+venv/
+.env/
+.env.*
+
+# Ignore large files not needed for deployment
+*.index
+*
+*.bin
+*
+# Ignore testing or local tools
+
+*.ipynb
+
+# Ignore frontend build folders (if any)
+build/
+dist/
+node_modules/
+
+
