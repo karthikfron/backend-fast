@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "Backend/Fastapi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Backend/Fastapi.py"
+    }
+  ]
+}
