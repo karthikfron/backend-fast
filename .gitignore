@@ -1,26 +1,25 @@
-# Ignore Python cache and compiled files
+# Ignore Python cache
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
 
-# Ignore virtual environment
+# Ignore virtual environments
 venv/
 .env/
 .env.*
 
-# Ignore large files not needed for deployment
+# Ignore large binary files
 *.index
-*
 *.bin
-*
-# Ignore testing or local tools
 
+# Ignore Jupyter notebooks
 *.ipynb
 
-# Ignore frontend build folders (if any)
-build/
-dist/
-node_modules/
-
-
+# Ignore everything else by default
+*
+# Allow essential files
+!.vercelignore
+!vercel.json
+!requirements.txt
+!api/
+!enriched_data.json
