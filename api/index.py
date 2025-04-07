@@ -4,6 +4,12 @@ import faiss
 import numpy as np
 import json
 import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # This loads the .env file
+
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 app = FastAPI()
 
