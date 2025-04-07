@@ -2,24 +2,16 @@
 __pycache__/
 *.pyc
 *.pyo
-
+.git
 # Ignore virtual environments
 venv/
 .env/
 .env.*
 
 # Ignore large binary files
-*.index
+.index
 *.bin
 
 # Ignore Jupyter notebooks
 *.ipynb
-
-# Ignore everything else by default
-*
-# Allow essential files
-!.vercelignore
-!vercel.json
-!requirements.txt
-!api/
-!enriched_data.json
+.dist
